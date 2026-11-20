@@ -1176,6 +1176,14 @@ img{max-width:100%}
 #kba .w-aus .l-jp{left:calc(50% + 7%);top:calc(60% + .9em);--at:2.6s}
 #kba .w-aus .wr-t{left:0;right:0;top:0;bottom:0;animation:kba-travel-up 1s cubic-bezier(.65,0,.35,1) 1.3s both}
 #kba .w-aus .wr-t i{position:absolute;left:50%;bottom:6%;width:5%;aspect-ratio:1;margin:0 0 2% -2.5%;border-radius:50%;background:var(--red);opacity:0;animation:kba-carry 1s linear 1.3s both}
+/* the arriving country is drawn as its own outline rather than a circle (Natural Earth outlines, assets/*.svg) */
+#kba .jroute .sil{border-radius:0;-webkit-mask:center/contain no-repeat;mask:center/contain no-repeat}
+#kba .jroute .sil.au{-webkit-mask-image:url(australia.svg);mask-image:url(australia.svg)}
+#kba .jroute .sil.jp{-webkit-mask-image:url(japan.svg);mask-image:url(japan.svg)}
+/* Japanese-owned: with the Australia outline, the line from Japan runs on to the coast and the white dot settles in the
+   middle of the continent */
+#kba .w-owned .sil ~ .wr-ln{height:30%}
+#kba .w-owned .sil ~ .wr-in{top:64%}
 /* Investors & strategic partnerships: a Japanese and an Australian circle come in from either side and overlap;
    the shared ground turns solid red (a window the shape of one circle holding the other) */
 #kba .w-inv .wr-c{top:31%;width:60%;aspect-ratio:1;border-radius:50%;background:var(--red);opacity:.35}
