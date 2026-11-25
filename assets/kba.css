@@ -141,7 +141,7 @@ img{max-width:100%}
 /* wide screens: home.js measures the gap between the headline's first two lines and puts the seal's top there */
 #kba .hero.hk .hanko{top:var(--hk);bottom:auto}
 #kba .hanko .ground{position:absolute;inset:0}
-#kba .hanko .media{width:100%;height:100%;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply}
+#kba .hanko .media{width:100%;height:100%}
 /* entering (wide screens, motion on; home.js): the hero holds while the Fuji seal travels down to the centre of the
    Sydney band, then opens like an aperture until it covers the band, its red fading so the film ends in black and
    white. In this mode the seal is a full-width layer (from the seal's top to the band's bottom): .ground is the
@@ -308,7 +308,7 @@ img{max-width:100%}
 #kba .pano > .media{width:100%;height:100%;object-position:50% 62%;filter:grayscale(1) contrast(1.05)}
 /* the Fuji film as a red panel standing the full height of the panorama, set in from the left (as in the design) */
 #kba .pano .hanko2{position:absolute;left:11%;top:0;bottom:0;width:19.7%;background:var(--red);overflow:hidden}
-#kba .pano .hanko2 .media{width:100%;height:100%;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply}
+#kba .pano .hanko2 .media{width:100%;height:100%}
 /* draw-ins, left to right: the Experience panel when it comes into view (home.js adds .wipe, then .in), and the hero
    rectangle on load where it isn't driven by home.js (phones); on wide screens home.js draws the hero's own wipe */
 @keyframes kba-wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
